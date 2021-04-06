@@ -21,7 +21,10 @@ export const StyledHeader = styled.div`
         padding: 0px 10px;
         color: ${({ theme }) => theme.body.color};
         a {
-            color: #00f;
+            color: ${({ theme }) => theme.user_color};
+            :hover {
+                text-decoration: underline;
+            }
         }
     }
 `;

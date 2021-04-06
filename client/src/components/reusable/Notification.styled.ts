@@ -10,7 +10,7 @@ export const StyledCloseButton = styled.div`
     cursor: pointer;
     height: 30px;
     margin: auto 30px auto 0px;
-    svg {
+    > svg {
         height: 90%;
         path {
             fill: white;
@@ -28,10 +28,11 @@ export const StyledNotificationContent = styled.div`
 
 const StyledNotification = styled.div<StyledNotificationParam>`
     text-align: center;
-    background: linear-gradient(#181 7%, #1a1 20%, #1a1 80%, #181 100%);
+    background: ${({ theme }) => theme.notification_bgcolor};
+    border-bottom: 1px solid grey;
     color: white;
     padding: 2px;
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(13px, 2vw, 15px);
     font-family: 'Segoe UI';
     display: flex;
     opacity: ${(props) => props.opacity};
