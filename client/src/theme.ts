@@ -39,6 +39,7 @@ const darkTheme: ThemeType = {
         bgcolor: '#10101a',
         route_color: '#fff'
     },
+
     home: {
         postnav_bgcolor: '#101013',
         nav_link_color: '#aaa',
@@ -54,7 +55,7 @@ const lightTheme: ThemeType = {
     purple: '#37173d',
     blue: '#00f',
     grey: '#aaa',
-    notification_bgcolor: 'linear-gradient(#181, #191,#1a1,#191, #181)',
+    notification_bgcolor: '#3a1f3f',
     user_color: 'blue',
     form_purple_btn: '#37173d',
     body: {
@@ -65,6 +66,7 @@ const lightTheme: ThemeType = {
         bgcolor: '#fff',
         route_color: '#37173d'
     },
+
     home: {
         postnav_bgcolor: '#37173d',
         nav_link_color: '#fff',

@@ -8,9 +8,10 @@ import getTheme from '../../theme';
 const StyledContributionInfo = styled.div`
     padding: 10px;
     border-radius: 6px;
+    margin: 10;
     white-space: nowrap;
-    min-width: 200px;
-    max-width: 400px;
+    min-width: 450px;
+    max-width: 600px;
     height: fit-content;
     flex: 1;
 `;
@@ -20,19 +21,19 @@ const ContributionChart: FC = (): ReactElement => {
     const DUMMY_DATA = [
         {
             name: 'Koledoye Abidemi',
-            y: 40
+            y: 52
         },
         {
             name: 'Tekena Solomon',
-            y: 39
+            y: 54
         },
         {
             name: 'Osinowo Seun',
-            y: 4
+            y: 5
         },
         {
             name: 'Emmanuel Itighise',
-            y: 2
+            y: 1
         }
     ];
 

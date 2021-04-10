@@ -36,12 +36,12 @@ export const StyledMainWrapper = styled.div`
 `;
 
 export const StyledTeamListWrapper = styled.div`
-    position: relative;
     border: 1px solid ${({ theme }) => theme.grey};
     border-radius: 6px;
     overflow: hidden;
-    max-width: 700px;
-    margin-left: auto;
+    margin: 0px 0px;
+    max-width: 600px;
+    float: right;
     width: fit-content;
 `;
 

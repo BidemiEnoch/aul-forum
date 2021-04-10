@@ -1,5 +1,6 @@
 import { FC, ReactElement } from 'react';
 import LeftSection from './LeftProfileSection';
+import RightProfileSection from './RightProfileSection';
 import styled from 'styled-components';
 
 const StyledProfilePage = styled.div`
@@ -11,6 +12,7 @@ export const ProfilePage: FC = (): ReactElement => {
     return (
         <StyledProfilePage>
             <LeftSection />
+            <RightProfileSection />
         </StyledProfilePage>
     );
 };

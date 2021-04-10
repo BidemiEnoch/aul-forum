@@ -1,4 +1,3 @@
-import { Options } from 'highcharts';
 import { ThemeType } from '../../theme';
 
 type ContributionDataType =
@@ -6,15 +5,18 @@ type ContributionDataType =
           name: string; //{name} represents the name of the contributor
           y: number; //{y} represents the contribution count
       }[]
-    | undefined;
+    | null;
 
-const getPieChartOptions = (contributionData: ContributionDataType, theme: ThemeType): Options => ({
+const getPieChartOptions = (contributionData: ContributionDataType, theme: ThemeType) => ({
     chart: {
         backgroundColor: theme.body.bgcolor,
-        height: 450
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
     },
     title: {
-        text: 'Developer contributions chart',
+        text: 'AUL forum developer contributions chart',
         style: {
             color: theme.body.color
         }
@@ -40,7 +42,7 @@ const getPieChartOptions = (contributionData: ContributionDataType, theme: Theme
     legend: {
         itemStyle: {
             color: theme.body.color,
-            fontWeight: '400'
+            fontWeight: 'bold'
         },
         itemHoverStyle: {
             color: theme.home.grey,
@@ -51,8 +53,7 @@ const getPieChartOptions = (contributionData: ContributionDataType, theme: Theme
         {
             name: 'Contribution percentage',
             colorByPoint: true,
-            data: contributionData,
-            type: 'pie'
+            data: contributionData
         }
     ],
     credits: {
